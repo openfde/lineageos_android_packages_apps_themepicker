@@ -236,7 +236,7 @@ public class CustomizationPickerActivity extends FragmentActivity implements Wal
         //Clock
         ClockManager clockManager = new ClockManager(getContentResolver(),
                 new ContentProviderClockProvider(this), eventLogger);
-        if (clockManager.isAvailable()) {
+        if (false/*clockManager.isAvailable()*/) {
             mSections.put(R.id.nav_clock, new ClockSection(R.id.nav_clock, clockManager));
         } else {
             Log.d(TAG, "ClockManager not available, removing Clock section");
